@@ -1,0 +1,12 @@
+**/target
+.git
+.env
+.env.*
+data
+logs
+secrets
+**/*.pem
+**/*.key
+**/out
+**/cache
+

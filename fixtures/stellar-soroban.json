@@ -1,0 +1,32 @@
+{
+  "id": "synthetic-triangle-v1",
+  "network": "stellar:testnet",
+  "domain": "stellar_soroban",
+  "ledger": 100,
+  "observed_at_unix": 1795183200,
+  "assets": [
+    { "id": { "network": "stellar:testnet", "address": "demo:USDC" }, "symbol": "USDC", "decimals": 7 },
+    { "id": { "network": "stellar:testnet", "address": "demo:XLM" }, "symbol": "XLM", "decimals": 7 },
+    { "id": { "network": "stellar:testnet", "address": "demo:EURC" }, "symbol": "EURC", "decimals": 7 }
+  ],
+  "pools": [
+    {
+      "id": "demo-usdc-xlm", "venue": "synthetic-cp-a", "domain": "stellar_soroban",
+      "asset_a": { "network": "stellar:testnet", "address": "demo:USDC" },
+      "asset_b": { "network": "stellar:testnet", "address": "demo:XLM" },
+      "reserve_a": 1000000000000, "reserve_b": 10000000000000, "fee_bps": 30
+    },
+    {
+      "id": "demo-xlm-eurc", "venue": "synthetic-cp-b", "domain": "stellar_soroban",
+      "asset_a": { "network": "stellar:testnet", "address": "demo:XLM" },
+      "asset_b": { "network": "stellar:testnet", "address": "demo:EURC" },
+      "reserve_a": 10000000000000, "reserve_b": 1000000000000, "fee_bps": 30
+    },
+    {
+      "id": "demo-eurc-usdc", "venue": "synthetic-cp-c", "domain": "stellar_soroban",
+      "asset_a": { "network": "stellar:testnet", "address": "demo:EURC" },
+      "asset_b": { "network": "stellar:testnet", "address": "demo:USDC" },
+      "reserve_a": 1000000000000, "reserve_b": 1050000000000, "fee_bps": 30
+    }
+  ]
+}

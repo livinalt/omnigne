@@ -1,0 +1,16 @@
+# Every amount is expressed in the settlement asset's integer base units.
+# Only paper mode is implemented. Unknown fields and modes are rejected.
+mode = "paper"
+
+[scanner]
+start_asset_address = "demo:USDC"
+trade_sizes = [1000000, 10000000, 100000000]
+max_hops = 3
+
+[risk]
+min_profit = 1000
+estimated_network_fee = 1000
+uncertainty_buffer = 1000
+max_input = 100000000
+max_snapshot_age_seconds = 15
+
